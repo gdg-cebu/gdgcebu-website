@@ -1,0 +1,31 @@
+{
+  "name": "gdgcebu-website",
+  "version": "0.0.0",
+  "description": "main gdgcebu website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdg-cebu/gdgcebu-website.git"
+  },
+  "author": "Arnelle Balane <arnellebalane@gmail.com> (arnellebalane.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gdg-cebu/gdgcebu-website/issues"
+  },
+  "homepage": "https://github.com/gdg-cebu/gdgcebu-website#readme",
+  "keywords": [
+    "gdgcebu",
+    "gdg",
+    "cebu"
+  ],
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nconf": "^0.8.4",
+    "nunjucks": "^2.4.2",
+    "winston": "^2.2.0"
+  }
+}
