@@ -1,0 +1,24 @@
+.event {
+    display: flex;
+    align-items: flex-start;
+    padding: 2em;
+    background-color: #fff;
+}
+
+.event:not(:last-of-type) {
+    margin-bottom: 2em;
+}
+
+
+.event__thumbnail {
+    flex-shrink: 0;
+    width: 20%;
+    margin-right: 2em;
+    background-color: #333;
+}
+
+.event__thumbnail::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}

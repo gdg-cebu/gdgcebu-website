@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Google Developers Group Cebu{% endblock %}</title>
+
+        <link rel="stylesheet" href="/static/stylesheets/base.css">
+        <link rel="stylesheet" href="/static/stylesheets/utilities.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+
+    <body>
+        <figure class="slanted-background"></figure>
+
+        <header class="site__header wrapper">
+            <img src="/static/images/gdg-cebu-logo.png" alt="GDG Cebu Logo" class="site__logo">
+
+            <nav class="nav site__nav">
+                <a href="/" class="nav__item">About</a>
+                <a href="/events" class="nav__item">Events</a>
+                <a href="/team" class="nav__item">Team</a>
+            </nav>
+        </header>
+
+        <main class="site__body wrapper">
+            {% block content %}{% endblock %}
+        </main>
+    </body>
+</html>

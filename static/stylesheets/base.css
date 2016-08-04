@@ -35,7 +35,7 @@ p {
 /** slanted background styles **/
 
 .slanted-background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -92,5 +92,4 @@ p {
 
 .page__title {
     margin-bottom: 1em;
-    font-size: 2.8rem;
 }

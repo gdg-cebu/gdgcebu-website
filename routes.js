@@ -7,4 +7,9 @@ router.get('/', function(request, response) {
 });
 
 
+router.get('/events', function(request, response) {
+    response.render('events.html');
+});
+
+
 module.exports = router;
