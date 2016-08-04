@@ -4,6 +4,7 @@
   "description": "main gdgcebu website",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js -e html,css,js,json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
