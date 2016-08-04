@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+a {
+    font: inherit;
+    color: inherit;
+}
+
+
+p {
+    margin: 1em 0;
+}
+
+
+
+/** slanted background styles **/
+
+.slanted-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #111;
+    -webkit-clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 50rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
+    opacity: 0.5;
+}
+
+
+
+/** header styles **/
+
+.site__header {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+
+.site__logo {
+    width: 25rem;
+}
+
+
+.site__nav {
+    margin-left: auto;
+}
+
+
+.site__body {
+    border: 1px solid transparent;
+}
+
+
+
+/** navigation styles **/
+
+.nav__item {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__item:not(:first-child) {
+    margin-left: 1em;
+}
+
+
+
+/** page styles **/
+
+.page__title {
+    margin-bottom: 1em;
+    font-size: 2.8rem;
+}
