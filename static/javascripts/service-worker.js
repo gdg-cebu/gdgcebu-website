@@ -74,3 +74,24 @@ self.addEventListener('fetch', function(e) {
         })
     );
 });
+
+
+self.addEventListener('push', function(e) {
+    var notification = e.data ? e.data.json() : {
+        title: 'GDG Cebu',
+        body: 'We have an update!',
+        icon: '/static/images/gdg-logo.png'
+    };
+    e.waitUntil(
+        self.registration.showNotification(notification.title, {
+            body: notification.body,
+            icon: notification.icon
+        })
+    );
+});
+
+
+self.addEventListener('notificationclick', function(e) {
+    e.notification.close();
+    e.waitUntil(self.clients.openWindow('/'));
+});
