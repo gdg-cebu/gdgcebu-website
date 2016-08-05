@@ -2,6 +2,15 @@ var express = require('express');
 var router = new express.Router();
 
 
+router.use(function(request, response, next) {
+    response.locals.currentPath = function(path, success) {
+        var current = request.url.replace(/\?.*$/, '');
+        return current === path ? success : '';
+    };
+    next();
+});
+
+
 router.get('/', function(request, response) {
     response.render('about.html');
 });
