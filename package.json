@@ -4,7 +4,7 @@
   "description": "main gdgcebu website",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js -e html,css,js,json",
+    "start": "./node_modules/.bin/nodemon server.js -e html,css,js,json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "nconf": "^0.8.4",
+    "nodemon": "^1.10.0",
     "nunjucks": "^2.4.2",
     "winston": "^2.2.0"
   }
