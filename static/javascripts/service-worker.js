@@ -17,9 +17,15 @@ var urlsToCache = [
     '/static/images/events/wtm.png',
     '/static/images/team/arnelle.jpg',
     '/static/images/team/ayrton.jpg',
+    '/static/images/team/cheer.jpg',
+    '/static/images/team/emelie.jpg',
+    '/static/images/team/frances.jpg',
+    '/static/images/team/john.jpg',
     '/static/images/team/julia.jpg',
+    '/static/images/team/kim.jpg',
     '/static/images/team/mark.jpg',
     '/static/images/team/rome.jpg',
+    '/static/images/team/shad.jpg',
     '/static/images/calendar.png',
     '/static/images/facebook.png',
     '/static/images/gdg-cebu-logo.png',
@@ -67,7 +73,12 @@ self.addEventListener('fetch', function(e) {
                 if (response) {
                     return response;
                 }
-                return fetch(e.request);
+                return fetch(e.request).catch(function(error) {
+                    if (e.request.url === '/get-events') {
+                        var response = new Response();
+                        return Promise.resolve(response);
+                    }
+                });
             });
         }).catch(function(error) {
             console.error('Error opening cache.', error);
