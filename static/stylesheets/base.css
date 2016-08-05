@@ -30,6 +30,8 @@ a {
 
 p {
     margin: 1em 0;
+    line-height: 1.35;
+    color: rgba(0, 0, 0, 0.54);
 }
 
 
@@ -93,7 +95,8 @@ p {
 /** page styles **/
 
 .page__title {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 400;
 }
 
 
