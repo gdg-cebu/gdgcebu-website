@@ -16,10 +16,18 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 3px;
+    opacity: 1;
+    transition: all 500ms ease;
 }
 
 .event:not(:last-of-type) {
     margin-bottom: 2em;
+}
+
+
+.event--hidden {
+    opacity: 0;
+    transform: translateY(-50%);
 }
 
 

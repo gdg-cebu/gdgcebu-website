@@ -14,10 +14,14 @@ function renderEvent(container, template, data) {
     event.find('.event__info--when').text(data.date);
     event.find('.event__info--where').text(data.venue);
     event.find('p').text(data.description);
-
     if (!data.venue) {
         event.find('.event__info--where').addClass('hidden');
     }
+
+    event.addClass('event--hidden');
+    setTimeout(function() {
+        event.removeClass('event--hidden');
+    }, 0);
 
     container.append(event);
     return event;
