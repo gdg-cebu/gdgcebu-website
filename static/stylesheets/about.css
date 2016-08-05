@@ -1,3 +1,13 @@
 .site__body {
-    padding-left: 25%;
+    height: calc(100vh - 170px);
+}
+
+.site__body::before {
+    content: "";
+    flex-shrink: 0;
+    float: left;
+    width: 50%;
+    height: calc(100vh - 170px);
+    background-color: rgba(0, 0, 0, 0.75);
+    shape-outside: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 }

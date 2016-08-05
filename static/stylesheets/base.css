@@ -93,3 +93,26 @@ p {
 .page__title {
     margin-bottom: 1em;
 }
+
+
+
+/** footer styles **/
+
+.site__footer {
+    border: 1px solid red;
+}
+
+
+.site__footer .wrapper {
+    display: flex;
+}
+
+
+.footer-nav {
+    margin-right: 10vw;
+}
+
+
+.footer-nav__item {
+    display: block;
+}
