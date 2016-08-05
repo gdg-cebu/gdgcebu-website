@@ -3,9 +3,15 @@
 }
 
 
+.events:empty::before {
+    content: "Fetching events...";
+    color: rgba(0, 0, 0, 0.54);
+}
+
+
 .event {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 2em;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
