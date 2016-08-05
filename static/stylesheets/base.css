@@ -93,7 +93,7 @@ p {
 
 
 .nav__item--current {
-    color: #2196f3;
+    color: #4e8df5;
 }
 
 
@@ -110,8 +110,11 @@ p {
 /** footer styles **/
 
 .site__footer {
-    padding: 2.5rem 0;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #e9e9e9;
     margin-top: auto;
+    background-color: #fff;
 }
 
 
@@ -121,10 +124,36 @@ p {
 
 
 .footer-nav {
-    margin-right: 10vw;
+    margin-right: 10rem;
+    font-family: "Droid Sans", sans-serif;
+}
+
+
+.footer-nav__title {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 
 .footer-nav__item {
     display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.footer-nav__item:not(:last-child) {
+    margin-bottom: 0.25em;
+}
+
+.footer-nav__item:hover,
+.footer-nav__item:focus {
+    text-decoration: underline;
+}
+
+
+.footer__copyright {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
 }
