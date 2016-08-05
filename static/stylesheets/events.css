@@ -5,9 +5,11 @@
 
 .event {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .event:not(:last-of-type) {
@@ -19,11 +21,48 @@
     flex-shrink: 0;
     width: 20%;
     margin-right: 2em;
-    background-color: #333;
 }
 
 .event__thumbnail::before {
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+
+.event__title {
+    margin-bottom: 0.5em;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+.event__info {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2em;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.event__info::before {
+    content: "";
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.5em;
+    background: center center no-repeat;
+    background-size: cover;
+    opacity: 0.38;
+}
+
+
+.event__info--when::before {
+    background-image: url("../images/calendar.png");
+}
+
+
+.event__info--where::before {
+    background-image: url("../images/location.png");
 }
