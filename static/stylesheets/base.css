@@ -42,11 +42,13 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 50%;
     bottom: 0;
     z-index: -1;
     background-color: #111;
     -webkit-clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 50rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
+    -moz-clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 50rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
+    clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 50rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
     opacity: 0.5;
 }
 
