@@ -152,6 +152,13 @@ p {
 }
 
 
+.footer__logo {
+    height: 8rem;
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+
 .footer__copyright {
     margin-top: 2rem;
     font-size: 1.2rem;
