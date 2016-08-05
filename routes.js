@@ -5,7 +5,7 @@ var router = new express.Router();
 router.use(function(request, response, next) {
     response.locals.currentPath = function(path, success) {
         var current = request.url.replace(/\?.*$/, '');
-        return current === path ? success : '';
+        return (current === path || current === path + '/') ? success : '';
     };
     next();
 });
