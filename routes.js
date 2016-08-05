@@ -12,4 +12,9 @@ router.get('/events', function(request, response) {
 });
 
 
+router.get('/team', function(request, response) {
+    response.render('team.html');
+})
+
+
 module.exports = router;
