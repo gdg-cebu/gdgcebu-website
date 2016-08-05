@@ -74,9 +74,8 @@ self.addEventListener('fetch', function(e) {
                     return response;
                 }
                 return fetch(e.request).catch(function(error) {
-                    if (e.request.url === '/get-events') {
-                        var response = new Response();
-                        return Promise.resolve(response);
+                    if (/\/get\-events$/.test(e.request.url)) {
+                        return new Response('[]');
                     }
                 });
             });
