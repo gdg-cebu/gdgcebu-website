@@ -51,6 +51,7 @@ p {
     -moz-clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 45rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
     clip-path: polygon(0 0, calc((100vw - 100rem) / 2 + 45rem) 0, calc((100vw - 100rem) / 2 + 25rem) 100%, 0 100%);
     opacity: 0.3;
+    transition: background-image 500ms ease-out;
 }
 
 

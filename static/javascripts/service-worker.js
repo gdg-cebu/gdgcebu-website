@@ -13,6 +13,8 @@ var urlsToCache = [
     '/static/vendor/jquery/dist/jquery.min.js',
     '/static/manifest.json',
     '/static/images/backgrounds/1.jpg',
+    '/static/images/backgrounds/2.jpg',
+    '/static/images/backgrounds/3.jpg',
     '/static/images/events/io2016.png',
     '/static/images/events/wtm.png',
     '/static/images/team/arnelle.jpg',

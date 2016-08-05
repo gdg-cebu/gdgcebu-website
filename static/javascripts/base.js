@@ -17,3 +17,21 @@ if ('serviceWorker' in navigator) {
         console.error('Service worker registration failed.', error);
     });
 }
+
+
+
+
+
+var bgimage = $('.slanted-background');
+var bgindex = 0;
+var backgrounds = [
+    'url("/static/images/backgrounds/1.jpg")',
+    'url("/static/images/backgrounds/2.jpg")',
+    'url("/static/images/backgrounds/3.jpg")'
+];
+
+(function slideshow() {
+    bgimage.css('background-image', backgrounds[bgindex]);
+    bgindex = (bgindex + 1) % backgrounds.length;
+    setTimeout(slideshow, 3000);
+})();
