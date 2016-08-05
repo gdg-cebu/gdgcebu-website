@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon server.js -e html,css,js,json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post-install": "npm run install-deps",
+    "install-deps": "./node_modules/.bin/bower install"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "cebu"
   ],
   "dependencies": {
+    "bower": "^1.7.9",
     "express": "^4.14.0",
     "firebase": "^3.2.1",
     "morgan": "^1.7.0",
