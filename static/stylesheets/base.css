@@ -35,6 +35,17 @@ p {
 }
 
 
+ol {
+    padding-left: 3em;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+
+li {
+    margin: 0.25em 0;
+}
+
+
 
 /** slanted background styles **/
 

@@ -1,6 +1,6 @@
 .site__body {
     display: flex;
-    padding: 15vh 0;
+    padding: 15vh 0 20vh 0;
 }
 
 .site__body::before {
