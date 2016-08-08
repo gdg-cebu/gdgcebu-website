@@ -1,6 +1,6 @@
 .site__body {
     display: flex;
-    padding: 15vh 0 20vh 0;
+    padding: 10vh 0 20vh 0;
 }
 
 .site__body::before {
@@ -13,6 +13,6 @@
 
 @supports (-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
     .site__body::before {
-        width: calc(50% - 5rem);
+        width: 50%;
     }
 }
