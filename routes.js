@@ -47,7 +47,7 @@ router.get('/get-events', function(request, response) {
         }).sort(function(a, b) {
             var datea = new Date(a.date);
             var dateb = new Date(b.date);
-            return datea.valueOf() - dateb.valueOf();
+            return dateb.valueOf() - datea.valueOf();
         });
         response.json(events);
     });
