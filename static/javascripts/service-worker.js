@@ -1,4 +1,4 @@
-var cacheName = 'cache-v4';
+var cacheName = 'cache-v5';
 var urlsToCache = [
     '/',
     '/events',
@@ -15,8 +15,6 @@ var urlsToCache = [
     '/static/images/backgrounds/1.jpg',
     '/static/images/backgrounds/2.jpg',
     '/static/images/backgrounds/3.jpg',
-    '/static/images/events/io2016.png',
-    '/static/images/events/wtm.png',
     '/static/images/team/arnelle.jpg',
     '/static/images/team/ayrton.jpg',
     '/static/images/team/cheer.jpg',
