@@ -95,15 +95,12 @@ li {
 /** navigation styles **/
 
 .nav__item {
+    margin: 0 0.5em;
     font-family: "Droid Sans", sans-serif;
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.nav__item:not(:first-child) {
-    margin-left: 1em;
 }
 
 
@@ -125,8 +122,7 @@ li {
 /** footer styles **/
 
 .site__footer {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding: 2rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: auto;
     font-family: "Droid Sans", sans-serif;
@@ -152,13 +148,10 @@ li {
 
 .footer-nav__item {
     display: block;
+    margin: 0.25em 0;
     font-size: 0.875em;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.54);
-}
-
-.footer-nav__item:not(:last-child) {
-    margin-bottom: 0.25em;
 }
 
 .footer-nav__item:hover,
@@ -175,7 +168,7 @@ li {
 
 
 .footer__copyright {
-    margin-top: 1.67em;
+    margin: 1.5em 0;
     font-size: 0.75em;
     color: rgba(0, 0, 0, 0.54);
 }
