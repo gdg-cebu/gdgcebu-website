@@ -135,6 +135,11 @@ li {
         margin-left: initial;
         text-align: center;
     }
+
+
+    .site__body {
+        padding: 2.5em 0;
+    }
 }
 
 
