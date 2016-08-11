@@ -77,7 +77,7 @@ li {
 
 
 .site__logo {
-    width: 25rem;
+    width: 15.625em;
 }
 
 
@@ -96,7 +96,7 @@ li {
 
 .nav__item {
     font-family: "Droid Sans", sans-serif;
-    font-size: 1.4rem;
+    font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -152,7 +152,7 @@ li {
 
 .footer-nav__item {
     display: block;
-    font-size: 1.4rem;
+    font-size: 0.875em;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.54);
 }
@@ -168,14 +168,14 @@ li {
 
 
 .footer__logo {
-    height: 5rem;
+    height: 3.125em;
     margin-top: 5.5rem;
     margin-left: auto;
 }
 
 
 .footer__copyright {
-    margin-top: 2rem;
-    font-size: 1.2rem;
+    margin-top: 1.67em;
+    font-size: 0.75em;
     color: rgba(0, 0, 0, 0.54);
 }
