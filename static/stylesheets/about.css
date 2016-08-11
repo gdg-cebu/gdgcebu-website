@@ -10,9 +10,20 @@
 }
 
 
-
 @supports (-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
     .site__body::before {
         width: 50%;
+    }
+}
+
+
+@media all and (max-width: 775px), (max-device-width: 775px) {
+    .site__body {
+        padding: 2.5em 0;
+    }
+
+
+    .site__body::before {
+        display: none;
     }
 }
