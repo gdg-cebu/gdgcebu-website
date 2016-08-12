@@ -10,6 +10,11 @@
 }
 
 
+.site__body div {
+    width: 100%;
+}
+
+
 @supports (-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
     .site__body::before {
         width: 50%;
