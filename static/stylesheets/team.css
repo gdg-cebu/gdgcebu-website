@@ -65,6 +65,20 @@
 }
 
 
+@media all and (max-width: 775px), (max-device-width: 775px) {
+    .team__item {
+        width: calc((100% - 6.1em) / 2);
+    }
+}
+
+
+@media all and (max-width: 425px), (max-device-width: 425px) {
+    .team__item {
+        width: calc(100% - 3.05em);
+    }
+}
+
+
 
 /** social links styles **/
 
