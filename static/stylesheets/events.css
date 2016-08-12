@@ -46,9 +46,14 @@
 
 .event__title {
     margin-bottom: 0.5em;
-    font-size: 2.4rem;
+    font-size: 1.5em;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.75);
+}
+
+
+.event__details p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -56,7 +61,7 @@
     display: inline-flex;
     align-items: center;
     margin-right: 2em;
-    font-size: 1.4rem;
+    font-size: 0.875em;
     color: rgba(0, 0, 0, 0.38);
 }
 
@@ -79,4 +84,21 @@
 
 .event__info--where::before {
     background-image: url("../images/location.png");
+}
+
+
+@media all and (max-width: 775px), (max-device-width: 775px) {
+    .site__body.wrapper {
+        width: 90vw;
+    }
+
+
+    .event__thumbnail {
+        display: none;
+    }
+
+
+    .event__info {
+        display: flex;
+    }
 }
