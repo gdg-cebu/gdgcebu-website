@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
 var bodyparser = require('body-parser');
-var nunjucks = require('nunjucks');
+var consolidate = require('consolidate');
 var morgan = require('morgan');
 var winston = require('winston');
 var config = require('./config');
@@ -13,8 +13,9 @@ app.use(morgan('dev'));
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
+app.engine('html', consolidate.nunjucks);
+app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
-nunjucks.configure(app.get('views'), { express: app });
 
 app.listen(config.get('PORT'), function() {
     winston.info('Server now running at port ' + config.get('PORT'));
