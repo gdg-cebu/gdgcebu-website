@@ -1,4 +1,4 @@
-var cacheName = 'cache-v6';
+var cacheName = 'cache-v7';
 var urlsToCache = [
     '/',
     '/events',
